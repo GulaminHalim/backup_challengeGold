@@ -1,9 +1,16 @@
 .card_width {
     width: 80% !important;
+    height: 200px;
     background-color: #F1F3FF;
     margin: 0 auto;
 
 
+}
+
+.btn_prevnext {
+    color: black;
+    background-color: green;
+    padding: 50px;
 }
 
 

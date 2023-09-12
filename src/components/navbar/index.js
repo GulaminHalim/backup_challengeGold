@@ -30,10 +30,10 @@ function NavbarComponent(props) {
               <Nav.Link href="/why-us/">Why Us</Nav.Link>
               <Nav.Link href="/testimonial/">Testimonial</Nav.Link>
               <Nav.Link href="FAQ">FAQ</Nav.Link>
+              <Nav.Link href="/cart/">Cart</Nav.Link>
             </Nav>
           </Offcanvas.Body>
         </Offcanvas>
-
         <Navbar.Collapse
           id="responsive-navbar-nav"
           className="justify-content-end"
@@ -43,6 +43,7 @@ function NavbarComponent(props) {
             <Nav.Link href="/why-us/">Why Us</Nav.Link>
             <Nav.Link href="/testimonial/">Testimonial</Nav.Link>
             <Nav.Link href="FAQ">FAQ</Nav.Link>
+            <Nav.Link href="/cart/">Cart</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

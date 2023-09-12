@@ -21,17 +21,16 @@ export default function Faq(props) {
   return (
     <Container>
       <br></br>
-      <br></br>
 
       <Row>
         <Col>
-          <div>
+          <div className="resp_size2">
             <h4>Frequently Asked Question</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
           </div>
         </Col>
         <Col>
-          <div>
+          <div id="resp_size1">
             <Accordion>
               <Accordion.Item eventKey="0">
                 <Accordion.Header>
@@ -50,6 +49,7 @@ export default function Faq(props) {
                   Berapa hari minimal sewa mobil lepas kunci?
                 </Accordion.Header>
                 <Accordion.Body>
+                  n
                   <strong>This is the second item&#39;s accordion body.</strong>
                   You can modify any of this with custom CSS or overriding our
                   default variables. It&#39;s also worth noting that just about

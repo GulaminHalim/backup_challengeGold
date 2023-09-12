@@ -21,18 +21,38 @@ export default function WhyUs() {
       <p style={{ fontWeight: "bold" }}>
         Mengapa harus pilih Binar Car Rental?
       </p>
-      <Row style={{ gap: 16 }}>
+      <Row style={{ gap: 16 }} className="img_size1">
         <Col>
-          <img src={Frame98} alt="desc" style={{ width: 240 }} />
+          <img
+            src={Frame98}
+            alt="desc"
+            style={{ width: 240 }}
+            className="resp_size1"
+          />
         </Col>
         <Col>
-          <img src={Frame99} alt="desc" style={{ width: 240 }} />
+          <img
+            src={Frame99}
+            alt="desc"
+            style={{ width: 240 }}
+            className="resp_size1"
+          />
         </Col>
         <Col>
-          <img src={Frame100} alt="desc" style={{ width: 240 }} />
+          <img
+            src={Frame100}
+            alt="desc"
+            style={{ width: 240 }}
+            className="resp_size1"
+          />
         </Col>
         <Col>
-          <img src={Frame101} alt="desc" style={{ width: 240 }} />
+          <img
+            src={Frame101}
+            alt="desc"
+            style={{ width: 240 }}
+            className="resp_size1"
+          />
         </Col>
       </Row>
       <br></br>

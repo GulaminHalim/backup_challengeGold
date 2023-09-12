@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import CarImage from "../../../assets/img/img_car.png";
 import { Image } from "react-bootstrap";
-import "../../../styles/App.css";
+import App from "../../../styles/App.css";
 
 export default function HeroSection() {
   return (
@@ -20,9 +20,11 @@ export default function HeroSection() {
             terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu
             untuk sewa mobil selama 24 jam.
           </p>
-          <Button color="success">Mulai Sewa Mobil</Button>
+          <Button color="success" href="/cart/" type="submit">
+            Mulai Sewa Mobil
+          </Button>
         </Col>
-        <Col className="hero-image-section">
+        <Col>
           <Image
             src={CarImage}
             width={"100%"}

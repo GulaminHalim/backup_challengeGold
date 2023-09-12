@@ -14,14 +14,15 @@ export default function Footer() {
       <br></br>
       <br></br>
       <br></br>
-      <Row>
+      <br></br>
+      <Row className="resp_size3" pt={5}>
         <Col>
           <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
           <p>binarcarrental@gmail.com</p>
           <p>081-233-334-808</p>
         </Col>
         <Col>
-          <ul class="list_style">
+          <ul className="resp_size3_2">
             <li>
               <a
                 href="#our service"

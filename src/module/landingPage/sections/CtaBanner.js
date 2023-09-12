@@ -4,7 +4,7 @@ import "../../.././styles/App.css";
 export default function CtaBanner() {
   return (
     <>
-      <div class="container mt-3">
+      <div class="container mt-3" id="resp_size1">
         <div class="mt-4 p-5 cta_banner retangle text-white rounded text-center">
           <h1>Sewa Mobil di (Lokasimu) Sekarang </h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>

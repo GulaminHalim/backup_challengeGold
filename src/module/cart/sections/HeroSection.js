@@ -4,13 +4,15 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import CarImage from "../../../assets/img/img_car.png";
+import { Image } from "react-bootstrap";
+import App from "../../../styles/App.css";
 
 export default function HeroSection() {
   return (
     <Container fluid>
-      <Row className="hero-container">
-        <Col sm={12} md={6} className="hero-content-section">
-          <h1 className="hero-section-text-title">
+      <Row className="hero-container flex-container">
+        <Col className="hero-content-section">
+          <h1 className="hero-section-text-title rspnv">
             Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)
           </h1>
           <p className="hero-section-text-description">
@@ -18,10 +20,12 @@ export default function HeroSection() {
             terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu
             untuk sewa mobil selama 24 jam.
           </p>
-          <Button color="success">Mulai Sewa Mobil</Button>
+          <Button color="success" display="none">
+            Mulai Sewa Mobil
+          </Button>
         </Col>
-        <Col sm={12} md={6} className="hero-image-section">
-          <img
+        <Col className="hero-image-section">
+          <Image
             src={CarImage}
             width={"100%"}
             className="image-car"

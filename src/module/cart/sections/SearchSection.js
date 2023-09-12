@@ -2,7 +2,6 @@ import { Fragment, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import FloatingLabel from "react-bootstrap/FloatingLabel";
 import InputGroup from "react-bootstrap/InputGroup";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
@@ -36,7 +35,7 @@ export default function SearchSection() {
   };
 
   const fetchDataDetail = (id) => {
-    API.get(`admin/car/${id}`)
+    API.get(`Admin/Car/${id}`)
       .then((res) => {})
       .catch((err) => {});
   };
@@ -76,10 +75,10 @@ export default function SearchSection() {
             <Row>
               <Col md={3}>
                 <Form.Group>
-                  <FloatingLabel for="nama" className="input-form">
+                  <Form.Label for="nama" className="input-form">
                     Nama Mobil
-                  </FloatingLabel>
-                  <InputGroup
+                  </Form.Label>
+                  <Form.Control
                     disabled={isSubmitted}
                     id="nama"
                     className="input-form"
@@ -87,14 +86,15 @@ export default function SearchSection() {
                     placeholder="Ketik nama/tipe mobil"
                     onChange={(e) => setNameCar(e.target.value)}
                   />
+                  <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                 </Form.Group>
               </Col>
               <Col md={3}>
                 <Form.Group>
-                  <FloatingLabel for="kapasitas" className="input-form">
+                  <Form.Label for="kapasitas" className="input-form">
                     Kategori
-                  </FloatingLabel>
-                  <InputGroup
+                  </Form.Label>
+                  <Form.Select
                     disabled={isSubmitted}
                     id="kapasitas"
                     name="select"
@@ -111,15 +111,15 @@ export default function SearchSection() {
                     <option className="opt" value="large">
                       6-8 orang
                     </option>
-                  </InputGroup>
+                  </Form.Select>
                 </Form.Group>
               </Col>
               <Col md={3}>
                 <Form.Group>
-                  <FloatingLabel for="harga" className="input-form">
+                  <Form.Label for="harga" className="input-form">
                     Harga
-                  </FloatingLabel>
-                  <InputGroup
+                  </Form.Label>
+                  <Form.Select
                     disabled={isSubmitted}
                     id="harga"
                     name="select"
@@ -136,15 +136,15 @@ export default function SearchSection() {
                     <option className="opt" value="high">
                       {`> Rp 600.000`}
                     </option>
-                  </InputGroup>
+                  </Form.Select>
                 </Form.Group>
               </Col>
               <Col md={3}>
                 <Form.Group>
-                  <FloatingLabel for="status" className="input-form">
+                  <Form.Label for="status" className="input-form">
                     Status
-                  </FloatingLabel>
-                  <InputGroup
+                  </Form.Label>
+                  <Form.Select
                     disabled={isSubmitted}
                     id="status"
                     name="select"
@@ -157,7 +157,7 @@ export default function SearchSection() {
                     <option className="opt" value={false}>
                       Free
                     </option>
-                  </InputGroup>
+                  </Form.Select>
                 </Form.Group>
               </Col>
             </Row>

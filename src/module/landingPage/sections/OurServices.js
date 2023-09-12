@@ -17,6 +17,7 @@ export default function OurServices() {
       <Row>
         <Col>
           <Image
+            className="resp_size1"
             src={ImgService}
             width="459px"
             alt="Happy Girl image"
@@ -24,7 +25,13 @@ export default function OurServices() {
           />
         </Col>
         <Col>
-          <Image src={Desc} width="468px" height="376px" alt="desc" />
+          <Image
+            className="resp_size1"
+            src={Desc}
+            width="468px"
+            height="376px"
+            alt="desc"
+          />
         </Col>
       </Row>
     </Container>
